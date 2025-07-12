@@ -62,7 +62,7 @@
     "url": "https://github.com/gajus/eslint-plugin-canonical"
   },
   "scripts": {
-    "build": "rm -fr ./dist && tsc",
+    "build": "tsc",
     "lint": "eslint .",
     "test": "mocha --require tsx './tests/rules/*'"
   },

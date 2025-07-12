@@ -4,6 +4,7 @@
     "declaration": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2021.String"],
     "module": "commonjs",
     "moduleResolution": "NodeNext",
     "noImplicitAny": false,
@@ -14,15 +15,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2015"
+    "target": "ESNext"
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-    "tests/fixtures"
-  ],
-  "include": [
-    "src",
-    "tests"
-  ]
+  "exclude": ["dist", "node_modules", "tests/fixtures"],
+  "include": ["src", "tests"]
 }
