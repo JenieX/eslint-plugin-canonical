@@ -1,8 +1,9 @@
 {
-  "ignorePatterns": [
-    "package-lock.json",
-    "ExportMap.ts"
-  ],
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "ignorePatterns": ["package-lock.json", "ExportMap.ts"],
   "overrides": [
     {
       "extends": [
@@ -19,9 +20,7 @@
       "files": "*.ts"
     },
     {
-      "extends": [
-        "canonical/json"
-      ],
+      "extends": ["canonical/json"],
       "files": "*.json"
     }
   ]

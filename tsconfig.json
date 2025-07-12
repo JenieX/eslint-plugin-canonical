@@ -6,6 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2021.String"],
     "module": "commonjs",
+    // "module": "esnext",
     "moduleResolution": "NodeNext",
     "noImplicitAny": false,
     "noImplicitReturns": true,

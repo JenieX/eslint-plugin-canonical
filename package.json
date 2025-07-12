@@ -23,6 +23,8 @@
   },
   "description": "Canonical linting rules for ESLint.",
   "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^9.0.1",
@@ -38,6 +40,8 @@
     "husky": "^7.0.4",
     "mocha": "^10.2.0",
     "react": "^18.2.0",
+    "rollup": "3.29.5",
+    "rollup-plugin-copy": "^3.5.0",
     "semantic-release": "^20.0.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
@@ -61,11 +65,17 @@
     "type": "git",
     "url": "https://github.com/gajus/eslint-plugin-canonical"
   },
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
+    "build:rollup": "rollup -c rollup.config.js",
     "lint": "eslint .",
-    "test": "mocha --require tsx './tests/rules/*'"
+    "test": "mocha --require tsx './tests/rules/*'",
+    "test-wait:js": "node --inspect-wait=192.168.0.39:2002 ./playground.js"
   },
   "version": "4.19.0",
   "homepage": "https://github.com/JenieX/eslint-plugin-canonical-legacy/tree/main#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
