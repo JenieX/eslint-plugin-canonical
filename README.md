@@ -16,7 +16,7 @@ ESLint rules for [Canonical ruleset](https://github.com/gajus/eslint-config-cano
 ```bash
 npm install eslint --save-dev
 npm install @typescript-eslint/parser --save-dev
-npm install eslint-plugin-canonical --save-dev
+npm install eslint-plugin-canonical-legacy --save-dev
 ```
 
 <a name="user-content-eslint-plugin-canonical-configuration"></a>

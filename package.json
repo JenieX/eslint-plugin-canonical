@@ -56,7 +56,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "./dist/src/index.js",
-  "name": "eslint-plugin-canonical",
+  "name": "eslint-plugin-canonical-legacy",
   "repository": {
     "type": "git",
     "url": "https://github.com/gajus/eslint-plugin-canonical"
@@ -66,5 +66,6 @@
     "lint": "eslint .",
     "test": "mocha --require tsx './tests/rules/*'"
   },
-  "version": "0.0.0-development"
+  "version": "4.19.0",
+  "homepage": "https://github.com/JenieX/eslint-plugin-canonical-legacy/tree/main#readme",
 }
